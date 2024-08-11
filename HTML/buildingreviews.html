@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://kit-pro.fontawesome.com/releases/v6.1.2/css/pro.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/buildingreviews.css">
+    <title>Bulding Reviews</title>
+    <link rel="icon" href="../Icons/ico.ico">
+
+</head>
+
+<body>
+    <div class="up_btn" id="upButton">
+        <i class="fa-duotone fa-up" id="icon"></i>
+    </div>
+    <header class="header" id="header">
+        <nav class="nav" id="nav">
+            <a class="logo_link" href="../index.html">
+                <div class="logo">
+                </div>
+            </a>
+
+
+            <ul class="nav__links" id="ul">
+                <li class="li"> <a data-i18n="buy" class="a" href="buy.html"><span>Buy</span></a> </li>
+                <li class="li"> <a data-i18n="rent" class="a" href="rent.html"><span>Rent</span></a> </li>
+                <li class="li"> <a data-i18n="commerical" class="a" href="commerical.html"><span>Commercial</span></a> </li>
+                <li class="li"> <a data-i18n="newProjects" class="a" href="new.html"><span>New Projects</span></a> </li>
+                <li class="li" id="price">
+                    <a class="a" href="#"> <span data-i18n="propertyPrice">Property Price</span> <i class="fa-regular fa-plus"></i></a>
+                </li>
+                <li class="li" id="explore">
+                    <a class="a on-page" href="#"> <span data-i18n="explore">Explore</span> <i class="fa-regular fa-plus"></i></a>
+                </li>
+                <select class="dropdown-select">
+                    <option data-i18n="english" id="en" value="en">English</option>
+                    <option data-i18n="arabic"  id="ar" value="ar">Arabic</option>
+                </select>
+            </ul>
+            <i class="fa-regular fa-bars" id="bars"></i>
+        </nav>
+    </header>
+    <div class="lang_menu" id="menu"></div>
+    <div class="burger_menu" id="burgerMenu">
+        <ul class="burger_links">
+            <li class="li2"> <a data-i18n="buy" class="a2" href="buy.html">Buy</a> </li>
+            <li class="li2"> <a data-i18n="rent" class="a2" href="rent.html">Rent</a> </li>
+            <li class="li2"> <a data-i18n="commerical" class="a2" href="commerical.html">Commercial</a> </li>
+            <li class="li2"> <a data-i18n="newProjects" class="a2" href="new.html">New Projects</a> </li>
+            <li class="li2" id="price2"> <a data-i18n="propertyPrice" class="a2" href="#">Property Price <i class="fa-regular fa-plus"></i></a> </li>
+            <div class="price_menu" id="priceMenu">
+                <ul class="price_links">
+                    <li class="price_link1"><a data-i18n="housePrice" class="price_pages" href="houseprice.html">House Price</a></li>
+                </ul>
+            </div>
+            <li class="li2" id="explore2"> <a data-i18n="explore" class="a2" href="#">Explore <i class="fa-regular fa-plus"></i></a> </li>
+            <div class="explore_menu" id="exploreMenu">
+                <ul class="explore_links">
+                    <li class="explore_link1"><a data-i18n="buildingreviews" class="explore_pages" href="buildingreviews.html">Building Reviews</a></li>
+                    <li class="explore_link1"><a data-i18n="communities" class="explore_pages" href="community.html">Community Guides</a></li>
+                    <li class="explore_link1"><a data-i18n="blog" class="explore_pages" href="blog.html">Property Blog</a></li>
+
+                </ul>
+            </div>
+            <select class="dropdown-select2">
+                <option data-i18n="english" id="en" value="en">English</option>
+                <option data-i18n="arabic"  id="ar" value="ar">Arabic</option>
+            </select>
+        </ul>
+    </div>
+    <main class="main1">
+        <div class="main1_container">
+            <h2 class="page_name" data-i18n="pageHeading" data-aos="zoom-in">Building reviews</h2>
+            <p class="page_parag" data-i18n="pageSpan" data-aos="zoom-in">Find out more about your new home. Read reviews and ratings from real residents.</p>
+            <div data-aos="zoom-in" class="search_container">
+                <i class="fa-solid fa-magnifying-glass" id="searchGlass"></i>
+                <input type="search" placeholder="Enter Building name or Community" class="inp1">
+                <button class="btn2" data-i18n="serachBtn">See reviews</button>
+            </div>
+        </div>
+    </main>
+    <!-- <div class="small-box">
+        <div class="box_container">
+            <span class="box_spn">WANT TO SHARE YOUR EXPERIENCE? HELP US IMPROVE THE EXPERIENCE OF OTHERS BY WRITING A REVIEW</span>
+            <button class="box_btn">WRITE REVIEW</button>
+        </div>
+    </div> -->
+    <div class="main2">
+        <div class="main2_container">
+            <aside class="aside1">
+                <!-- <span class="spn2"><a class="home_link" href="index.html">Home </a> > Building reviews</span> -->
+                <h3 class="aside_hedding" data-i18n="pageH2" data-aos="fade-right">Top reviewed buildings in the UAE</h3>
+                <div data-aos="fade-right" class="prodact1">
+                    <div class="photo_container"></div>
+                    <div class="prodact_content">
+                        <h4 class="content_hed">Palace Tower 2</h4>
+                        <div class="right">
+                            <span class="revw">5/5</span>
+                            <span><a class="revwiesNumber" href="#">(5 reviews)</a></span>
+                        </div>
+                        <div class="loc_container">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="loc_spn"> Dubai, The Views, Golf Towers</span>
+                        </div>
+
+                        <div class="prodact_type">
+                            <span><a href="#" class="prodact_type_spn">Properties for rent</a></span>
+                            <span><a href="#" class="prodact_type_spn">Properties for Sale</a></span>
+                        </div>
+                        <div class="btn_box">
+                            <button class="prodact_btn"><i class="fa-regular fa-comment"></i> Read reviews</button>
+                            <button class="prodact_btn">Write review</button>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-right" class="prodact1">
+                    <div class="photo_container"></div>
+                    <div class="prodact_content">
+                        <h4 class="content_hed">Palace Tower 2</h4>
+                        <div class="right">
+                            <span class="revw">5/5</span>
+                            <span><a class="revwiesNumber" href="#">(5 reviews)</a></span>
+                        </div>
+                        <div class="loc_container">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="loc_spn"> Dubai, The Views, Golf Towers</span>
+                        </div>
+
+                        <div class="prodact_type">
+                            <span><a href="#" class="prodact_type_spn">Properties for rent</a></span>
+                            <span><a href="#" class="prodact_type_spn">Properties for Sale</a></span>
+                        </div>
+                        <div class="btn_box">
+                            <button class="prodact_btn"><i class="fa-regular fa-comment"></i> Read reviews</button>
+                            <button class="prodact_btn">Write review</button>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-right" class="prodact1">
+                    <div class="photo_container"></div>
+                    <div class="prodact_content">
+                        <h4 class="content_hed">Palace Tower 2</h4>
+                        <div class="right">
+                            <span class="revw">5/5</span>
+                            <span><a class="revwiesNumber" href="#">(5 reviews)</a></span>
+                        </div>
+                        <div class="loc_container">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="loc_spn"> Dubai, The Views, Golf Towers</span>
+                        </div>
+
+                        <div class="prodact_type">
+                            <span><a href="#" class="prodact_type_spn">Properties for rent</a></span>
+                            <span><a href="#" class="prodact_type_spn">Properties for Sale</a></span>
+                        </div>
+                        <div class="btn_box">
+                            <button class="prodact_btn"><i class="fa-regular fa-comment"></i> Read reviews</button>
+                            <button class="prodact_btn">Write review</button>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-right" class="prodact1">
+                    <div class="photo_container"></div>
+                    <div class="prodact_content">
+                        <h4 class="content_hed">Palace Tower 2</h4>
+                        <div class="right">
+                            <span class="revw">5/5</span>
+                            <span><a class="revwiesNumber" href="#">(5 reviews)</a></span>
+                        </div>
+                        <div class="loc_container">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="loc_spn"> Dubai, The Views, Golf Towers</span>
+                        </div>
+
+                        <div class="prodact_type">
+                            <span><a href="#" class="prodact_type_spn">Properties for rent</a></span>
+                            <span><a href="#" class="prodact_type_spn">Properties for Sale</a></span>
+                        </div>
+                        <div class="btn_box">
+                            <button class="prodact_btn"><i class="fa-regular fa-comment"></i> Read reviews</button>
+                            <button class="prodact_btn">Write review</button>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-right" class="prodact1">
+                    <div class="photo_container"></div>
+                    <div class="prodact_content">
+                        <h4 class="content_hed">Palace Tower 2</h4>
+                        <div class="right">
+                            <span class="revw">5/5</span>
+                            <span><a class="revwiesNumber" href="#">(5 reviews)</a></span>
+                        </div>
+                        <div class="loc_container">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="loc_spn"> Dubai, The Views, Golf Towers</span>
+                        </div>
+
+                        <div class="prodact_type">
+                            <span><a href="#" class="prodact_type_spn">Properties for rent</a></span>
+                            <span><a href="#" class="prodact_type_spn">Properties for Sale</a></span>
+                        </div>
+                        <div class="btn_box">
+                            <button class="prodact_btn"><i class="fa-regular fa-comment"></i> Read reviews</button>
+                            <button class="prodact_btn">Write review</button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <aside class="aside2">
+                <h3 class="aside_hedding asside_hedding2" data-i18n="pageH3" data-aos="fade-left">Last reviews</h3>
+                <div data-aos="fade-left" class="rev1">
+                    <div class="right2">
+                        <span class="revw">4.5/5</span>
+                        <h4 class="content_hed"> Best quality tower in JLT </a>
+                    </div>
+                    <p class="rev_parag">Best quality tower in JLT, very well maintain and organized, quality resident also is there</p>
+                    <div class="btn_spn_container">
+                        <span> Saba Tower 2 </span>
+                        <a href="#" class="aside2_btn">More reviews</a>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="rev1">
+                    <div class="right2">
+                        <span class="revw">4.5/5</span>
+                        <h4 class="content_hed"> Best quality tower in JLT </a>
+                    </div>
+                    <p class="rev_parag">Best quality tower in JLT, very well maintain and organized, quality resident also is there</p>
+                    <div class="btn_spn_container">
+                        <span> Saba Tower 2 </span>
+                        <a href="#" class="aside2_btn">More reviews</a>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="rev1">
+                    <div class="right2">
+                        <span class="revw">4.5/5</span>
+                        <h4 class="content_hed"> Best quality tower in JLT </a>
+                    </div>
+                    <p class="rev_parag">Best quality tower in JLT, very well maintain and organized, quality resident also is there</p>
+                    <div class="btn_spn_container">
+                        <span> Saba Tower 2 </span>
+                        <a href="#" class="aside2_btn">More reviews</a>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="rev1">
+                    <div class="right2">
+                        <span class="revw">4.5/5</span>
+                        <h4 class="content_hed"> Best quality tower in JLT </a>
+                    </div>
+                    <p class="rev_parag">Best quality tower in JLT, very well maintain and organized, quality resident also is there</p>
+                    <div class="btn_spn_container">
+                        <span> Saba Tower 2 </span>
+                        <a href="#" class="aside2_btn">More reviews</a>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="rev1">
+                    <div class="right2">
+                        <span class="revw">4.5/5</span>
+                        <h4 class="content_hed"> Best quality tower in JLT </a>
+                    </div>
+                    <p class="rev_parag">Best quality tower in JLT, very well maintain and organized, quality resident also is there</p>
+                    <div class="btn_spn_container">
+                        <span> Saba Tower 2 </span>
+                        <a href="#" class="aside2_btn">More reviews</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="logo2"></div>
+        <ul class="footer_links">
+            <li><a class="footer_li on-page" href="about.html" data-i18n="footerLi1">About us</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi2">Terms & Conditions</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi3">Privacy Policy</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi4">Cookies Policy</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi5">Client Login</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi6">Careers</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi7">Agent Hub</a></li>
+        </ul>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="../Js/buildingreviews.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://kit-pro.fontawesome.com/releases/v6.1.2/css/pro.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price</title>
+    <link rel="stylesheet" href="../CSS/houseprice.css">
+    <link rel="icon" href="../Icons/ico.ico">
+
+</head>
+
+<body>
+    <div class="up_btn" id="upButton">
+        <i class="fa-duotone fa-up" id="icon"></i>
+    </div>
+    <header class="header" id="header">
+        <nav class="nav" id="nav">
+            <a class="logo_link" href="../index.html">
+                <div class="logo">
+                </div>
+            </a>
+
+
+            <ul class="nav__links" id="ul">
+                <li class="li"> <a data-i18n="buy" class="a" href="buy.html"><span>Buy</span></a> </li>
+                <li class="li"> <a data-i18n="rent" class="a" href="rent.html"><span>Rent</span></a> </li>
+                <li class="li"> <a data-i18n="commerical" class="a" href="commerical.html"><span>Commercial</span></a> </li>
+                <li class="li"> <a data-i18n="newProjects" class="a" href="new.html"><span>New Projects</span></a> </li>
+                <li class="li" id="price">
+                    <a class="a on-page" href="#"> <span data-i18n="propertyPrice">Property Price</span> <i class="fa-regular fa-plus"></i></a>
+                </li>
+                <li class="li" id="explore">
+                    <a class="a" href="#"> <span data-i18n="explore">Explore</span> <i class="fa-regular fa-plus"></i></a>
+                </li>
+                <select class="dropdown-select">
+                    <option data-i18n="english" id="en" value="en">English</option>
+                    <option data-i18n="arabic"  id="ar" value="ar">Arabic</option>
+                </select>
+            </ul>
+            <i class="fa-regular fa-bars" id="bars"></i>
+
+
+        </nav>
+    </header>
+    <div class="lang_menu" id="menu"></div>
+    <div class="burger_menu" id="burgerMenu">
+        <ul class="burger_links">
+            <li class="li2"> <a data-i18n="buy" class="a2" href="buy.html">Buy</a> </li>
+            <li class="li2"> <a data-i18n="rent" class="a2" href="rent.html">Rent</a> </li>
+            <li class="li2"> <a data-i18n="commerical" class="a2" href="commerical.html">Commercial</a> </li>
+            <li class="li2"> <a data-i18n="newProjects" class="a2" href="new.html">New Projects</a> </li>
+            <li class="li2" id="price2"> <a data-i18n="propertyPrice" class="a2" href="#">Property Price <i class="fa-regular fa-plus"></i></a> </li>
+            <div class="price_menu" id="priceMenu">
+                <ul class="price_links">
+                    <li class="price_link1"><a data-i18n="housePrice" class="price_pages" href="houseprice.html">House Price</a></li>
+                </ul>
+            </div>
+            <li class="li2" id="explore2"> <a data-i18n="explore" class="a2" href="#">Explore <i class="fa-regular fa-plus"></i></a> </li>
+            <div class="explore_menu" id="exploreMenu">
+                <ul class="explore_links">
+                    <li class="explore_link1"><a data-i18n="buildingreviews" class="explore_pages" href="buildingreviews.html">Building Reviews</a></li>
+                    <li class="explore_link1"><a data-i18n="communities" class="explore_pages" href="community.html">Community Guides</a></li>
+                    <li class="explore_link1"><a data-i18n="blog" class="explore_pages" href="blog.html">Property Blog</a></li>
+
+                </ul>
+            </div>
+            <select class="dropdown-select2">
+                <option data-i18n="english" id="en" value="en">English</option>
+                <option data-i18n="arabic"  id="ar" value="ar">Arabic</option>
+            </select>
+        </ul>
+    </div>
+    <main class="main1">
+        <div class="main1_container">
+            <h2 data-aos="zoom-in" class="main1_hedding" data-i18n="pageHeading">House Price</h2>
+            <span data-aos="zoom-in" class="spn1" data-i18n="pageSpan">See house values in different communities and compare asking prices, actual transaction prices and rental yields.</span>
+            <div data-aos="zoom-in" class="btns_container">
+                <button class="btn2" id="btn1" data-i18n="dubai">DUBAI</button>
+                <button class="btn3" id="btn2" data-i18n="abuDahbi">ABU DHABI</button>
+            </div>
+            <div class="search_container" data-aos="zoom-in">
+                <i id="searchGlass" class="fa-regular fa-magnifying-glass"></i>
+                <input id="finder2Inp1" type="search" placeholder="Select Community or Tower" class="inp1">
+                <button class="btn4" id="finder2btn" data-i18n="serachBtn">Show trends</button>
+            </div>
+        </div>
+    </main>
+    <main class="main2">
+        <div class="main_container">
+            <span class="spn2"><a class="home_link" href="index.html">Home </a> > House Price</span>
+            <div class="select_container">
+                <h2 class="select_hedding" id="hed" data-i18n="mainHeading">House Prices in Dubai Marina</h2>
+                <div class="selects">
+                    <select class="select1" name="one" data-aos="fade-right">
+                        <option value="type" selected hidden disabled data-i18n="typeH">Property Type</option>
+                        <option value="1" data-i18n="typeLi1">Appertmant</option>
+                        <option value="2" data-i18n="typeLi2">Villa / Twonhouse</option>
+                    </select>
+                    <select class="select2" name="two" data-aos="fade-down">
+                        <option value="number" data-i18n="bedH" selected hidden disabled>Number of the Bedrooms</option>
+                        <option value="studio" data-i18n="bedLi">Studio</option>
+                        <option value="2bedroms">2 </option>
+                        <option value="3">3 </option>
+                        <option value="4">4 </option>
+                        <option value="5">5 </option>
+                        <option value="6">6 </option>
+                        <option value="7+">7+ </option>
+                    </select>
+                    <select data-aos="fade-left" class="select3" name="three">
+                        <option value="number" selected hidden disabled data-i18n="completionH">Completion Status</option>
+                        <option value="completed" data-i18n="completionli1">Completed Properties</option>
+                        <option value="not" data-i18n="completionli2">off-plan</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="main3">
+        <div class="main3_container">
+            <h3 class="threeMonth" data-i18n="last3Mon">LAST 3 MONTHS <i class="fa-light fa-calendar-day"></i></h3>
+            <div class="price_container">
+                <div data-aos="fade-right" class="price_box">
+                    <span class="price_hed">Average asking sales price  <i class="fa-solid fa-circle-info"></i></span>
+                    <h3 class="price" id="price1">1,500,000 AED</h3>
+                    <span class="price_end">Starting from 100,000 AED</span>
+                </div>
+                <div data-aos="fade-down" class="price_box2">
+                    <span class="price_hed">Average transaction sales price  <i class="fa-solid fa-circle-info"></i></span>
+                    <h3 class="price" id="price2">1,180,000 AED</h3>
+                    <span class="price_end" id="priceEnd">Starting from 15,284 AED</span>
+                </div>
+                <div data-aos="fade-down" class="price_box">
+                    <span class="price_hed">Average rental price  <i class="fa-solid fa-circle-info"></i></span>
+                    <h3 class="price" id="price3">105,000 AED</h3>
+                    <span class="price_end">Starting from 10,000 AED</span>
+                </div>
+                <div data-aos="fade-left" class="price_box">
+                    <span class="price_hed">Average gross yield  <i class="fa-solid fa-circle-info"></i></span>
+                    <h3 id="price4" class="price" style="    position: relative; bottom: 25px;">7.00%</h3>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- <main class="main4">
+        <div class="main4_container"></div>
+    </main> -->
+    <main class="main5" id="blogs">
+        <div class="main5_container">
+            <ul class="ul1">
+                <h3 class="ul_hedding">Dubai Property Price Trends </h3>
+                <li data-aos="zoom-in"><a class="ul_links" href="#">Arabian Ranches Property Price Trends</a></li>
+                <li data-aos="zoom-in"><a class="ul_links" href="#">Arabian Ranches Property Price Trends</a></li>
+                <li data-aos="zoom-in"><a class="ul_links" href="#">Arabian Ranches Property Price Trends</a></li>
+                <li data-aos="zoom-in"><a class="ul_links" href="#">Arabian Ranches Property Price Trends</a></li>
+                <li data-aos="zoom-in"><a class="ul_links" href="#">Arabian Ranches Property Price Trends</a></li>
+            </ul>
+            <ul class="ul2">
+                <li data-aos="zoom-in"><a class="ul_links" href="#">Arabian Ranches Property Price Trends</a></li>
+                <li data-aos="zoom-in"><a class="ul_links" href="#">Arabian Ranches Property Price Trends</a></li>
+                <li data-aos="zoom-in"><a class="ul_links" href="#">Arabian Ranches Property Price Trends</a></li>
+                <li data-aos="zoom-in"><a class="ul_links" href="#">Arabian Ranches Property Price Trends</a></li>
+                <li data-aos="zoom-in"><a class="ul_links" href="#">Arabian Ranches Property Price Trends</a></li>
+            </ul>
+            <ul class="ul3">
+                <li data-aos="zoom-in"><a class="ul_links" href="#">Arabian Ranches Property Price Trends</a></li>
+                <li data-aos="zoom-in"><a class="ul_links" href="#">Arabian Ranches Property Price Trends</a></li>
+                <li data-aos="zoom-in"><a class="ul_links" href="#">Arabian Ranches Property Price Trends</a></li>
+                <li data-aos="zoom-in"><a class="ul_links" href="#">Arabian Ranches Property Price Trends</a></li>
+                <li data-aos="zoom-in"><a class="ul_links" href="#">Arabian Ranches Property Price Trends</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="logo2"></div>
+        <ul class="footer_links">
+            <li><a class="footer_li" href="about.html" data-i18n="footerLi1">About us</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi2">Terms & Conditions</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi3">Privacy Policy</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi4">Cookies Policy</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi5">Client Login</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi6">Careers</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi7">Agent Hub</a></li>
+        </ul>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="../Js/houseprice.js"></script>
+</body>
+
+</html>
+
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://kit-pro.fontawesome.com/releases/v6.1.2/css/pro.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verlux Property</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Icons/ico.ico">
+</head>
+
+<body>
+    <div class="up_btn" id="upButton">
+        <i class="fa-duotone fa-up" id="icon"></i>
+    </div>
+    <div class="main-header-container">
+        <header class="header" id="header">
+            <nav class="nav" id="nav">
+                <a class="logo_link" href="index.html">
+                    <div class="logo">
+                    </div>
+                </a>
+
+
+                <ul class="nav__links" id="ul">
+                    <li class="li"> <a data-i18n="buy" class="a" href="HTML/buy.html"><span>Buy</span></a> </li>
+                    <li class="li"> <a data-i18n="rent" class="a" href="HTML/rent.html"><span>Rent</span></a> </li>
+                    <li class="li"> <a data-i18n="commerical" class="a" href="HTML/commerical.html"><span>Commercial</span></a> </li>
+                    <li class="li"> <a data-i18n="newProjects" class="a" href="HTML/new.html"><span>New Projects</span></a> </li>
+                    <li class="li" id="price">
+                        <a class="a" href="#"> <span data-i18n="propertyPrice">Property Price</span> <i class="fa-regular fa-plus"></i></a>
+                    </li>
+                    <li class="li" id="explore">
+                        <a class="a" href="#"> <span data-i18n="explore">Explore</span> <i class="fa-regular fa-plus"></i></a>
+                    </li>
+                    <select class="dropdown-select">
+                        <option data-i18n="english" id="en" value="en">English</option>
+                        <option data-i18n="arabic"  id="ar" value="ar">Arabic</option>
+                    </select>
+                </ul>
+                <i class="fa-regular fa-bars" id="bars"></i>
+            </nav>
+        </header>
+        <div class="lang_menu" id="menu"></div>
+        <div class="burger_menu" id="burgerMenu">
+            <ul class="burger_links">
+                <li class="li2"> <a data-i18n="buy" class="a2" href="HTML/buy.html">Buy</a> </li>
+                <li class="li2"> <a data-i18n="rent" class="a2" href="HTML/rent.html">Rent</a> </li>
+                <li class="li2"> <a data-i18n="commerical" class="a2" href="HTML/commerical.html">Commercial</a> </li>
+                <li class="li2"> <a data-i18n="newProjects" class="a2" href="HTML/new.html">New Projects</a> </li>
+                <li class="li2" id="price2"> <a data-i18n="propertyPrice" class="a2" href="#">Property Price <i class="fa-regular fa-plus"></i></a> </li>
+                <div class="price_menu" id="priceMenu">
+                    <ul class="price_links">
+                        <li class="price_link1"><a data-i18n="housePrice" class="price_pages" href="HTML/houseprice.html">House Price</a></li>
+                    </ul>
+                </div>
+                <li class="li2" id="explore2"> <a data-i18n="explore" class="a2" href="#">Explore <i class="fa-regular fa-plus"></i></a> </li>
+                <div class="explore_menu" id="exploreMenu">
+                    <ul class="explore_links">
+                        <li class="explore_link1"><a data-i18n="buildingreviews" class="explore_pages" href="HTML/buildingreviews.html">Building Reviews</a></li>
+                        <li class="explore_link1"><a data-i18n="communities" class="explore_pages" href="HTML/community.html">Community Guides</a></li>
+                        <li class="explore_link1"><a data-i18n="blog" class="explore_pages" href="HTML/blog.html">Property Blog</a></li>
+
+                    </ul>
+                </div>
+                <select class="dropdown-select2">
+                    <option data-i18n="english" id="en" value="en">English</option>
+                    <option data-i18n="arabic"  id="ar" value="ar">Arabic</option>
+                </select>
+            </ul>
+        </div>
+        <main class="main" id="main">
+            <div class="main_content">
+                <h3 data-aos="zoom-in" class="main_hedding" data-i18n="mainHead">We Open Doors</h3>
+                <div class="homeFinder" id="finder" data-aos="zoom-in">
+                    <div class="finder1">
+                        <span class="finder_spn1" data-i18n="buy" id="rent">Rent</span>
+                        <span class="finder_spn2" data-i18n="rent" id="buy">Buy</span>
+                        <span class="finder_spn3" data-i18n="commerical" id="commerical">Commercial</span>
+                        <span class="finder_spn4" data-i18n="newProjects" id="newPrj">New Projects</span>
+
+                    </div>
+                    <div class="finder2" id="finder2">
+                        <div class="half1">
+                            <input id="finder2Inp1" type="search" class="inp1" placeholder="Key Words | الكلمات المفتاحية">
+                            <i id="searchGlass" class="fa-solid fa-magnifying-glass searchGlass"></i>
+                            <select name="select1" class="select1" id="select">
+                                <option data-i18n="typeH" value="type" selected hidden disabled>Property Type</option>
+                                <option data-i18n="typeLi1">Apartment</option>
+                                <option data-i18n="typeLi2">Villa</option>
+                                <option data-i18n="typeLi3">Twon House</option>
+                                <option data-i18n="typeLi4">Pent House</option>
+                                <option data-i18n="typeLi5">Compound</option>
+                                <option data-i18n="typeLi6">Duplex</option>
+                                <option data-i18n="typeLi7">Full Flor</option>
+                                <option data-i18n="typeLi8">Half Flor</option>
+                                <option data-i18n="typeLi9">Whole Building</option>
+                                <option data-i18n="typeLi10">Bulk Rent Unit</option>
+                                <option data-i18n="typeLi11">Bungalow</option>
+                                <option data-i18n="typeLi12">Hotel & Hotel Apartment</option>
+                            </select>
+                            <select name="select2" class="select2">
+                            <option data-i18n="bedH" value="type2" disabled selected hidden>Bedrooms</option>
+                                <option data-i18n="bedLi" value="bedStudio">Studio</option>
+                                <option value="bed1">1</option>
+                                <option value="bed2">2</option>
+                                <option value="bed3">3</option>
+                                <option value="bed4">4</option>
+                                <option value="bed5">5</option>
+                                <option value="bed6">6</option>
+                                <option value="bed7">7</option>
+                                <option value="bed7+">7+</option>
+                            </select>
+                            <select name="select2" class="select4">
+                                <option data-i18n="bathH" value="type2" disabled selected hidden>Baths</option>
+                                <option value="bath1">1</option>
+                                <option value="bath2">2</option>
+                                <option value="bath3">3</option>
+                                <option value="bath4">4</option>
+                                <option value="bath5">5</option>
+                                <option value="bath6">6</option>
+                                <option value="bath7">7</option>
+                                <option value="bath7+">7+</option>
+                                </select>
+                            <select name="select3" class="select3">
+                            <option data-i18n="priceH" value="price" selected disabled hidden>Price</option>
+                                <option value="price1">0-150K</option>
+                                <option value="price2">151K-350K</option>
+                                <option value="price3">351K-499K</option>
+                                <option value="price4">500K-999K</option>
+                                <option value="price5">1M - 1.9M</option>
+                                <option value="price6">2M+</option>
+                      </select>
+                            <button id="finder2btn" class="btn2"><i class="fa-solid fa-magnifying-glass "></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <main class="main_2">
+        <div class="main2__container">
+            <div class="main2__hedding">
+
+                <h3 data-aos="fade-down" class="main2__hed" data-i18n="main2Head">Home search made easy</h3>
+                <span data-aos="fade-down" class="spn4" data-i18n="spn4">Discover how we can help you find your dream home</span>
+            </div>
+            <div class="blogs_container">
+                <div class="blog1" data-aos="fade-right">
+                    <div class="img-box1"></div>
+
+                    <a href="HTML/agent.html" class="blog1_contanet">
+                        <h4 class="blog1_hed" data-i18n="blog1Head">Find your SuperAgent</h4>
+                        <p class="p1" data-i18n="p1">The most responsive agents with up-to-date and improved accuracy on the properties you are searching for.</p>
+                    </a>
+                </div>
+                <div class="blog2" data-aos="fade-left">
+                    <div class="img-box2">
+                    </div>
+                    <a href="HTML/buy.html" class="blog2_contanet">
+                        <h4 class="blog2_hed" data-i18n="blog2Head">Verified Listings</h4>
+                        <p class="p2" data-i18n="p2">Explore Property listings that have passed our verification process</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <h2 class="news" data-i18n="newsHeading">Something New Everyday</h2>
+    <div class="container1">
+        <!--* -->
+        <h4 data-i18n="newsHeading2">New properties for rent </h4>
+        <ul class="cards" id="container">
+            <li data-aos="zoom-in" class="card">
+                <div class="img_container">
+                    <span class="city" data-i18n="city1">Dubai</span>
+                    <span class="type" data-i18n="type1">The Palm Jumeirah</span>
+                </div>
+                <span class="discrption" data-i18n="discription1">108 new properties for rent</span>
+                <div></div>
+            </li>
+            <li data-aos="zoom-in" class="card">
+                <div class="img_container">
+                    <span class="city" data-i18n="city1">Dubai</span>
+                    <span class="type" data-i18n="type1">The Palm Jumeirah</span>
+                </div>
+                <span class="discrption" data-i18n="discription1">108 new properties for rent</span>
+                <div></div>
+            </li>
+            <li data-aos="zoom-in" class="card">
+                <div class="img_container">
+                    <span class="city" data-i18n="city1">Dubai</span>
+                    <span class="type" data-i18n="type1">The Palm Jumeirah</span>
+                </div>
+                <span class="discrption" data-i18n="discription1">108 new properties for rent</span>
+                <div></div>
+            </li>
+            <li data-aos="zoom-in" class="card">
+                <div class="img_container">
+                    <span class="city" data-i18n="city1">Dubai</span>
+                    <span class="type" data-i18n="type1">The Palm Jumeirah</span>
+                </div>
+                <span class="discrption" data-i18n="discription1">108 new properties for rent</span>
+                <div></div>
+            </li>
+            <li data-aos="zoom-in" class="card ">
+                <div class="img_container ">
+                    <span class="city" data-i18n="city1">Dubai</span>
+                    <span class="type" data-i18n="type1">The Palm Jumeirah</span>
+                </div>
+                <span class="discrption" data-i18n="discription1">108 new properties for rent</span>
+                <div></div>
+            </li>
+        </ul>
+        <!-- todo -->
+
+        <h4 data-i18n="newsHeading3">New properties for sale </h4>
+        <ul class="cards" id="container2">
+            <li data-aos="zoom-in" class="card">
+                <div class="img_container">
+                    <span class="city" data-i18n="city1">Dubai</span>
+                    <span class="type" data-i18n="type1">The Palm Jumeirah</span>
+                </div>
+                <span class="discrption" data-i18n="discription1">108 new properties for rent</span>
+                <div></div>
+            </li>
+            <li data-aos="zoom-in" class="card">
+                <div class="img_container">
+                    <span class="city" data-i18n="city1">Dubai</span>
+                    <span class="type" data-i18n="type1">The Palm Jumeirah</span>
+                </div>
+                <span class="discrption" data-i18n="discription1">108 new properties for rent</span>
+                <div></div>
+            </li>
+            <li data-aos="zoom-in" class="card">
+                <div class="img_container">
+                    <span class="city" data-i18n="city1">Dubai</span>
+                    <span class="type" data-i18n="type1">The Palm Jumeirah</span>
+                </div>
+                <span class="discrption" data-i18n="discription1">108 new properties for rent</span>
+                <div></div>
+            </li>
+            <li data-aos="zoom-in" class="card">
+                <div class="img_container">
+                    <span class="city" data-i18n="city1">Dubai</span>
+                    <span class="type" data-i18n="type1">The Palm Jumeirah</span>
+                </div>
+                <span class="discrption" data-i18n="discription1">108 new properties for rent</span>
+                <div></div>
+            </li>
+            <li data-aos="zoom-in" class="card">
+                <div class="img_container">
+                    <span class="city" data-i18n="city1">Dubai</span>
+                    <span class="type" data-i18n="type1">The Palm Jumeirah</span>
+                </div>
+                <span class="discrption" data-i18n="discription1">108 new properties for rent</span>
+                <div></div>
+            </li>
+
+        </ul>
+
+    </div>
+    <h2 data-aos="fade-down" class="news" data-i18n="newsHeading4">Meet the SuperAgents</h2>
+    <div class="container2">
+        <!--!-->
+
+        <ul class="cards" id="container3">
+            <li data-aos="zoom-in" class="card2">
+                <div class="circel_image1"></div>
+                <div class="name_job">
+                    <h3>Name</h3>
+                    <span>Lorem, ipsum dolor.</span>
+                </div>
+            </li>
+            <li data-aos="zoom-in" class="card2">
+                <div class="circel_image2"></div>
+                <div class="name_job">
+                    <h3>Name</h3>
+                    <span>Lorem, ipsum dolor.</span>
+                </div>
+            </li>
+            <li data-aos="zoom-in" class="card2">
+                <div class="circel_image3"></div>
+                <div class="name_job">
+                    <h3>Name</h3>
+                    <span>Lorem, ipsum dolor.</span>
+                </div>
+            </li>
+            <li data-aos="zoom-in" class="card2">
+                <div class="circel_image1"></div>
+                <div class="name_job">
+                    <h3>Name</h3>
+                    <span>Lorem, ipsum dolor.</span>
+                </div>
+            </li>
+            <li data-aos="zoom-in" class="card2">
+                <div class="circel_image2"></div>
+                <div class="name_job">
+                    <h3>Name</h3>
+                    <span>Lorem, ipsum dolor.</span>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="the_container">
+        <main class="main_4">
+
+            <div data-aos="fade-right" class="fr1">
+                <div class="fr1_half1">
+                    <h3 class="fr1_hed" data-i18n="fr1H">Agent Hub: Grow your audience, boost your brand</h3>
+                    <p class="p5" data-i18n="fr1P">For real estate agents who want to make the most out of their presence on Property Finder
+                    </p>
+                    <button class="btn4" data-i18n="fr1Btn">Go to Agent Hub</button>
+
+                </div>
+                <div class="fr1_half2"></div>
+            </div>
+            <div data-aos="fade-left" class="smallbox">
+                <div class="box_container">
+                    <h5 class="smallbox_hed" data-i18n="fr2H">Agent Hub:</h5>
+                    <span class="p3" data-i18n="fr2P">List your property with us</span>
+                    <button class="btn3" data-i18n="fr2Btn">Get Started</button>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <div class="blog-con">
+        <h2 class="blog_heading" data-i18n="blogHead" data-aos="fade-down">News from the blog</h2>
+        <div class="blogs_box">
+            <div class="blog-box" data-aos="fade-left">
+                <div class="blog-image b-img1"></div>
+                <h4 data-i18n="blogH1" id="blogH1" class="blog-heading">Your Guide to Healthy Eating in Dubai</h4>
+                <p data-i18n="blogP1" id="blogP1" class="blog-parag">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, asperiores! Quod nobis pariatur aliquid doloremque? Est delectus quasi ad, vel reprehenderit sit eveniet, quas fugit doloremque consequuntur rerum facere officiis?</p>
+                <div id="blogSM1" class="blog-social-media">
+                    <a href="https://www.facebook.com/profile.php?id=61563985109708"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=971502358311&text="><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="blog-box" data-aos="fade-down">
+                <div class="blog-image b-img2"></div>
+                <h4 data-i18n="blogH2" id="blogH2" class="blog-heading">Your Guide to Healthy Eating in Dubai</h4>
+                <p data-i18n="blogP2" id="blogP2" class="blog-parag">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, asperiores! Quod nobis pariatur aliquid doloremque? Est delectus quasi ad, vel reprehenderit sit eveniet, quas fugit doloremque consequuntur rerum facere officiis?</p>
+                <div id="blogSM2" class="blog-social-media">
+                    <a href="https://www.facebook.com/profile.php?id=61563985109708"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=971502358311&text="><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="blog-box" data-aos="fade-right">
+                <div class="blog-image b-img3"></div>
+                <h4 data-i18n="blogH3" id="blogH3" class="blog-heading">Your Guide to Healthy Eating in Dubai</h4>
+                <p data-i18n="blogP3" id="blogP3" class="blog-parag">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, asperiores! Quod nobis pariatur aliquid doloremque? Est delectus quasi ad, vel reprehenderit sit eveniet, quas fugit doloremque consequuntur rerum facere officiis?</p>
+                <div id="blogSM3" class="blog-social-media">
+                    <a href="https://www.facebook.com/profile.php?id=61563985109708"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=971502358311&text="><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <button data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-i18n="blogMoreBtn" type="button" class="blog_btn "><a class="blogs_link " href="HTML/blog.html">More Blogs</a></button>
+    </div>
+
+    <footer class="footer">
+        <div class="logo2"></div>
+        <ul class="footer_links">
+            <li><a class="footer_li on-page" href="HTML/about.html" data-i18n="footerLi1">About us</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi2">Terms & Conditions</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi3">Privacy Policy</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi4">Cookies Policy</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi5">Client Login</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi6">Careers</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi7">Agent Hub</a></li>
+        </ul>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

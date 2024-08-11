@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" integrity="sha512-YFENbnqHbCRmJt5d+9lHimyEMt8LKSNTMLSaHjvsclnZGICeY/0KYEeiHwD1Ux4Tcao0h60tdcMv+0GljvWyHg==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://kit-pro.fontawesome.com/releases/v6.1.2/css/pro.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent</title>
+    <link rel="stylesheet" href="../CSS/buy.css">
+    <link rel="icon" href="../Icons/ico.ico">
+
+</head>
+
+<body>
+    <div class="up_btn" id="upButton">
+        <i class="fa-duotone fa-up" id="icon"></i>
+    </div>
+    <header class="header" id="header">
+        <nav class="nav" id="nav">
+            <a class="logo_link" href="../index.html">
+                <div class="logo">
+                </div>
+            </a>
+
+
+            <ul class="nav__links" id="ul">
+                <li class="li"> <a data-i18n="buy" class="a merriweather-regular" href="buy.html"><span>Buy</span></a> </li>
+                <li class="li"> <a data-i18n="rent" class="a on-page" href="rent.html"><span>Rent</span></a> </li>
+                <li class="li"> <a data-i18n="commerical" class="a" href="commerical.html"><span>Commercial</span></a> </li>
+                <li class="li"> <a data-i18n="newProjects" class="a" href="new.html"><span>New Projects</span></a> </li>
+                <li class="li" id="price">
+                    <a class="a" href="#"> <span data-i18n="propertyPrice">Property Price</span> <i class="fa-regular fa-plus"></i></a>
+                </li>
+                <li class="li" id="explore">
+                    <a class="a" href="#"> <span data-i18n="explore">Explore</span> <i class="fa-regular fa-plus"></i></a>
+                </li>
+                <select class="dropdown-select">
+                    <option data-i18n="english" id="en" value="en">English</option>
+                    <option data-i18n="arabic"  id="ar" value="ar">Arabic</option>
+                </select>
+            </ul>
+            <i class="fa-regular fa-bars" id="bars"></i>
+
+        </nav>
+    </header>
+    <div class="lang_menu" id="menu"></div>
+    <div class="burger_menu" id="burgerMenu">
+        <ul class="burger_links">
+            <li class="li2"> <a data-i18n="buy" class="a2" href="buy.html">Buy</a> </li>
+            <li class="li2"> <a data-i18n="rent" class="a2" href="rent.html">Rent</a> </li>
+            <li class="li2"> <a data-i18n="commerical" class="a2" href="commerical.html">Commercial</a> </li>
+            <li class="li2"> <a data-i18n="newProjects" class="a2" href="new.html">New Projects</a> </li>
+            <li class="li2" id="price2"> <a data-i18n="propertyPrice" class="a2" href="#">Property Price <i class="fa-regular fa-plus"></i></a> </li>
+            <div class="price_menu" id="priceMenu">
+                <ul class="price_links">
+                    <li class="price_link1"><a data-i18n="housePrice" class="price_pages" href="houseprice.html">House Price</a></li>
+                </ul>
+            </div>
+            <li class="li2" id="explore2"> <a data-i18n="explore" class="a2" href="#">Explore <i class="fa-regular fa-plus"></i></a> </li>
+            <div class="explore_menu" id="exploreMenu">
+                <ul class="explore_links">
+                    <li class="explore_link1"><a data-i18n="buildingreviews" class="explore_pages" href="buildingreviews.html">Building Reviews</a></li>
+                    <li class="explore_link1"><a data-i18n="communities" class="explore_pages" href="community.html">Community Guides</a></li>
+                    <li class="explore_link1"><a data-i18n="blog" class="explore_pages" href="blog.html">Property Blog</a></li>
+
+                </ul>
+            </div>
+            <select class="dropdown-select2">
+                <option data-i18n="english" id="en" value="en">English</option>
+                <option data-i18n="arabic"  id="ar" value="ar">Arabic</option>
+            </select>
+        </ul>
+    </div>
+    <div class="flter">
+        <div class="filter_container">
+            <div class="half1">
+                <input id="finder2Inp1" type="search" class="inp1" placeholder=" City,Community or Building">
+                <i id="searchGlass" class="fa-duotone fa-magnifying-glass"></i>
+                <select class="select1">
+                    <option data-i18n="buy" value="buy" >Buy</option>
+                    <option data-i18n="rent" value="rent" selected>Rent</option>
+                    <option data-i18n="commerical" value="com_buy">Commerical Buy</option>
+                    <option data-i18n="newProjects" value="com_rent">Commerical Rent</option>
+                </select>
+                <select class="select2">
+                        <option data-i18n="typeH" value="type1" selected hidden disabled>Property Type</option>
+                        <option data-i18n="typeLi1" value="apartment">Apartment</option>
+                        <option data-i18n="typeLi2" value="villa">Villa</option>
+                        <option data-i18n="typeLi3" value="twonhouse">Twon House</option>
+                        <option data-i18n="typeLi4" value="Pent Hous">Pent House</option>
+                        <option data-i18n="typeLi5" value="Compound">Compound</option>
+                        <option data-i18n="typeLi6" value="Duplex">Duplex</option>
+                        <option data-i18n="typeLi7" value="Full">Full Flor</option>
+                        <option data-i18n="typeLi8" value="Half Flor">Half Flor</option>
+                        <option data-i18n="typeLi9" value="Whole Building">Whole Building</option>
+                        <option data-i18n="typeLi10" value="Bulk Rent Unit">Bulk Rent Unit</option>
+                        <option data-i18n="typeLi11" value="Bungalow">Bungalow</option>
+                        <option data-i18n="typeLi12" value="Hotel & Hotel Appertment">Hotel & Hotel Appertment</option>
+                </select>
+                <select class="select3">
+                    <option value="type2" hidden selected disabled data-i18n="bedH">Bedrooms</option>
+                    <option data-i18n="bedLi" value="bedStudio">Studio</option>
+                    <option value="bed1">1</option>
+                    <option value="bed2">2</option>
+                    <option value="bed3">3</option>
+                    <option value="bed4">4</option>
+                    <option value="bed5">5</option>
+                    <option value="bed6">6</option>
+                    <option value="bed7">7</option>
+                    <option value="bed7+">7+</option>
+                </select>
+                <select class="select5">
+                    <option value="type3" hidden selected disabled data-i18n="bathH">baths</option>
+                    <option value="bath1">1</option>
+                    <option value="bath2">2</option>
+                    <option value="bath3">3</option>
+                    <option value="bath4">4</option>
+                    <option value="bath5">5</option>
+                    <option value="bath6">6</option>
+                    <option value="bath7">7</option>
+                    <option value="bath7+">7+</option>
+                </select>
+                <select class="select4">
+                    <option value="type3" hidden selected disabled data-i18n="priceH">Price</option>
+                    <option value="price1">0-150K</option>
+                    <option value="price2">151K-350K</option>
+                    <option value="price3">351K-499K</option>
+                    <option value="price4">500K-999K</option>
+                    <option value="price5">1M - 1.9M</option>
+                    <option value="price6">2M+</option>
+                </select>
+
+                <button data-i18n="findBtn" id="finder2btn" class="select_btn">
+                    Find
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <div class="help_tools">
+        <div class="the_container">
+            <h5 data-i18n="helpToolheading">Properties for rent in UAE</h5>
+            <div class="spans_container">
+                <span data-i18n="helpToolResult" class="container_span2">13 results</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="all-projects-container">
+        <div class="projects-container">
+            <div class="projects-dad">
+                <a href="../projects/rent/project1.html" class="project">
+                    <div class="project-photo"></div>
+                    <div class="project-content-container">
+                        <h3 class="project-heading">Contemporary Apartment</h3>
+                        <span>$3.600/mo <br> <span class="propert-type">Apartment</span>
+                        </span>
+                        <div class="deatils-container">
+                            <span><i class="fa-light fa-bed-front"></i> 4</span>
+                            <span><i class="fa-light fa-bath"></i> 2</span>
+                            <span><i class="fa-light fa-ruler-triangle"></i> 1200m<sup>2</sup></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="../projects/rent/project1.html" class="project">
+                    <div class="project-photo"></div>
+                    <div class="project-content-container">
+                        <h3 class="project-heading">Contemporary Apartment</h3>
+                        <span>$3.600/mo <br> <span class="propert-type">Apartment</span>
+                        </span>
+                        <div class="deatils-container">
+                            <span><i class="fa-light fa-bed-front"></i> 4</span>
+                            <span><i class="fa-light fa-bath"></i> 2</span>
+                            <span><i class="fa-light fa-ruler-triangle"></i> 1200m<sup>2</sup></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="../projects/rent/project1.html" class="project">
+                    <div class="project-photo"></div>
+                    <div class="project-content-container">
+                        <h3 class="project-heading">Contemporary Apartment</h3>
+                        <span>$3.600/mo <br> <span class="propert-type">Apartment</span>
+                        </span>
+                        <div class="deatils-container">
+                            <span><i class="fa-light fa-bed-front"></i> 4</span>
+                            <span><i class="fa-light fa-bath"></i> 2</span>
+                            <span><i class="fa-light fa-ruler-triangle"></i> 1200m<sup>2</sup></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="projects-dad">
+                <a href="../projects/rent/project1.html" class="project">
+                    <div class="project-photo"></div>
+                    <div class="project-content-container">
+                        <h3 class="project-heading">Contemporary Apartment</h3>
+                        <span>$3.600/mo <br> <span class="propert-type">Apartment</span>
+                        </span>
+                        <div class="deatils-container">
+                            <span><i class="fa-light fa-bed-front"></i> 4</span>
+                            <span><i class="fa-light fa-bath"></i> 2</span>
+                            <span><i class="fa-light fa-ruler-triangle"></i> 1200m<sup>2</sup></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="../projects/rent/project1.html" class="project">
+                    <div class="project-photo"></div>
+                    <div class="project-content-container">
+                        <h3 class="project-heading">Contemporary Apartment</h3>
+                        <span>$3.600/mo <br> <span class="propert-type">Apartment</span>
+                        </span>
+                        <div class="deatils-container">
+                            <span><i class="fa-light fa-bed-front"></i> 4</span>
+                            <span><i class="fa-light fa-bath"></i> 2</span>
+                            <span><i class="fa-light fa-ruler-triangle"></i> 1200m<sup>2</sup></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="../projects/rent/project1.html" class="project">
+                    <div class="project-photo"></div>
+                    <div class="project-content-container">
+                        <h3 class="project-heading">Contemporary Apartment</h3>
+                        <span>$3.600/mo <br> <span class="propert-type">Apartment</span>
+                        </span>
+                        <div class="deatils-container">
+                            <span><i class="fa-light fa-bed-front"></i> 4</span>
+                            <span><i class="fa-light fa-bath"></i> 2</span>
+                            <span><i class="fa-light fa-ruler-triangle"></i> 1200m<sup>2</sup></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="projects-dad">
+                <a href="../projects/rent/project1.html" class="project">
+                    <div class="project-photo"></div>
+                    <div class="project-content-container">
+                        <h3 class="project-heading">Contemporary Apartment</h3>
+                        <span>$3.600/mo <br> <span class="propert-type">Apartment</span>
+                        </span>
+                        <div class="deatils-container">
+                            <span><i class="fa-light fa-bed-front"></i> 4</span>
+                            <span><i class="fa-light fa-bath"></i> 2</span>
+                            <span><i class="fa-light fa-ruler-triangle"></i> 1200m<sup>2</sup></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="../projects/rent/project1.html" class="project">
+                    <div class="project-photo"></div>
+                    <div class="project-content-container">
+                        <h3 class="project-heading">Contemporary Apartment</h3>
+                        <span>$3.600/mo <br> <span class="propert-type">Apartment</span>
+                        </span>
+                        <div class="deatils-container">
+                            <span><i class="fa-light fa-bed-front"></i> 4</span>
+                            <span><i class="fa-light fa-bath"></i> 2</span>
+                            <span><i class="fa-light fa-ruler-triangle"></i> 1200m<sup>2</sup></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="../projects/rent/project1.html" class="project">
+                    <div class="project-photo"></div>
+                    <div class="project-content-container">
+                        <h3 class="project-heading">Contemporary Apartment</h3>
+                        <span>$3.600/mo <br> <span class="propert-type">Apartment</span>
+                        </span>
+                        <div class="deatils-container">
+                            <span><i class="fa-light fa-bed-front"></i> 4</span>
+                            <span><i class="fa-light fa-bath"></i> 2</span>
+                            <span><i class="fa-light fa-ruler-triangle"></i> 1200m<sup>2</sup></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="projects-dad">
+                <a href="../projects/rent/project1.html" class="project">
+                    <div class="project-photo"></div>
+                    <div class="project-content-container">
+                        <h3 class="project-heading">Contemporary Apartment</h3>
+                        <span>$3.600/mo <br> <span class="propert-type">Apartment</span>
+                        </span>
+                        <div class="deatils-container">
+                            <span><i class="fa-light fa-bed-front"></i> 4</span>
+                            <span><i class="fa-light fa-bath"></i> 2</span>
+                            <span><i class="fa-light fa-ruler-triangle"></i> 1200m<sup>2</sup></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="../projects/rent/project1.html" class="project">
+                    <div class="project-photo"></div>
+                    <div class="project-content-container">
+                        <h3 class="project-heading">Contemporary Apartment</h3>
+                        <span>$3.600/mo <br> <span class="propert-type">Apartment</span>
+                        </span>
+                        <div class="deatils-container">
+                            <span><i class="fa-light fa-bed-front"></i> 4</span>
+                            <span><i class="fa-light fa-bath"></i> 2</span>
+                            <span><i class="fa-light fa-ruler-triangle"></i> 1200m<sup>2</sup></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="../projects/rent/project1.html" class="project">
+                    <div class="project-photo"></div>
+                    <div class="project-content-container">
+                        <h3 class="project-heading">Contemporary Apartment</h3>
+                        <span>$3.600/mo <br> <span class="propert-type">Apartment</span>
+                        </span>
+                        <div class="deatils-container">
+                            <span><i class="fa-light fa-bed-front"></i> 4</span>
+                            <span><i class="fa-light fa-bath"></i> 2</span>
+                            <span><i class="fa-light fa-ruler-triangle"></i> 1200m<sup>2</sup></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="projects-dad">
+                <a href="../projects/rent/project1.html" class="project">
+                    <div class="project-photo"></div>
+                    <div class="project-content-container">
+                        <h3 class="project-heading">Contemporary Apartment</h3>
+                        <span>$3.600/mo <br> <span class="propert-type">Apartment</span>
+                        </span>
+                        <div class="deatils-container">
+                            <span><i class="fa-light fa-bed-front"></i> 4</span>
+                            <span><i class="fa-light fa-bath"></i> 2</span>
+                            <span><i class="fa-light fa-ruler-triangle"></i> 1200m<sup>2</sup></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="../projects/rent/project1.html" class="project">
+                    <div class="project-photo"></div>
+                    <div class="project-content-container">
+                        <h3 class="project-heading">Contemporary Apartment</h3>
+                        <span>$3.600/mo <br> <span class="propert-type">Apartment</span>
+                        </span>
+                        <div class="deatils-container">
+                            <span><i class="fa-light fa-bed-front"></i> 4</span>
+                            <span><i class="fa-light fa-bath"></i> 2</span>
+                            <span><i class="fa-light fa-ruler-triangle"></i> 1200m<sup>2</sup></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="../projects/rent/project1.html" class="project">
+                    <div class="project-photo"></div>
+                    <div class="project-content-container">
+                        <h3 class="project-heading">Contemporary Apartment</h3>
+                        <span>$3.600/mo <br> <span class="propert-type">Apartment</span>
+                        </span>
+                        <div class="deatils-container">
+                            <span><i class="fa-light fa-bed-front"></i> 4</span>
+                            <span><i class="fa-light fa-bath"></i> 2</span>
+                            <span><i class="fa-light fa-ruler-triangle"></i> 1200m<sup>2</sup></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="logo2"></div>
+        <ul class="footer_links">
+            <li><a class="footer_li on-page" href="about.html" data-i18n="footerLi1">About us</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi2">Terms & Conditions</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi3">Privacy Policy</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi4">Cookies Policy</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi5">Client Login</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi6">Careers</a></li>
+            <li><a class="footer_li" href="#" data-i18n="footerLi7">Agent Hub</a></li>
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../Js/buy.js"></script>
+</body>
